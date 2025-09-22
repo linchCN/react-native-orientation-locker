@@ -59,7 +59,7 @@ public class OrientationModule extends ReactContextBaseJavaModule implements Ori
     protected void init() {
         if(!this.isInit){
             this.isInit = true;
-            mOrientationListener = new OrientationEventListener(reactContext, SensorManager.SENSOR_DELAY_UI) {
+            mOrientationListener = new OrientationEventListener(this.ctx, SensorManager.SENSOR_DELAY_UI) {
 
                 @Override
                 public void onOrientationChanged(int orientation) {
