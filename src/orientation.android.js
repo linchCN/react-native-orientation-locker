@@ -47,6 +47,10 @@ export default class Orientation {
     });
   };
 
+  static init = () => {
+    OrientationNative.init();
+  }
+
   static isLocked = () => {
     return locked;
   };
