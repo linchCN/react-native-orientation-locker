@@ -47,6 +47,9 @@ export default class Orientation {
     });
   };
 
+  static init = () => {
+  }
+
   static isLocked = () => {
     return locked;
   };
