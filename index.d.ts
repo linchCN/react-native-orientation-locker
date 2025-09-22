@@ -53,6 +53,8 @@ declare class Orientation {
 
   static removeLockListener(callback: (orientation: OrientationType) => void): void;
 
+  static init(): void;
+
   static removeAllListeners(): void;
 
   static getInitialOrientation(): OrientationType;
