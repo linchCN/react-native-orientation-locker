@@ -40,8 +40,8 @@ import javax.annotation.Nullable;
 
 public class OrientationModule extends ReactContextBaseJavaModule implements OrientationListeners {
 
-    final BroadcastReceiver mReceiver;
-    final OrientationEventListener mOrientationListener;
+    BroadcastReceiver mReceiver;
+    OrientationEventListener mOrientationListener;
     final ReactApplicationContext ctx;
     private boolean isLocked = false;
     private boolean isConfigurationChangeReceiverRegistered = false;
