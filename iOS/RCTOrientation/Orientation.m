@@ -53,7 +53,8 @@ static UIInterfaceOrientationMask _orientationMask = UIInterfaceOrientationMaskA
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-    [self removeListeners:1];
+    // 完全移除 removeListeners 调用
+    // RCTEventEmitter 基类会自动处理监听器清理
 }
 
 - (UIInterfaceOrientation)getInterfaceOrientation
